@@ -3,71 +3,244 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>مكتب المستشار فريد حسام عبدالهادي</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{margin:0;font-family:Tahoma;background:#000;color:#fff}
-nav{position:sticky;top:0;background:#111;padding:15px;text-align:center}
-nav a{color:#D4AF37;text-decoration:none;margin:0 12px;font-weight:bold}
-.hero{padding:80px 20px;text-align:center}
-.hero h1{color:#D4AF37;font-size:40px}
-.btn{background:#D4AF37;color:#000;padding:14px 24px;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block;transition:.3s}
-.btn:hover{transform:scale(1.08)}
-.section{padding:40px 20px}
-.card{background:#111;border:1px solid #D4AF37;padding:20px;border-radius:12px;margin:15px auto;max-width:900px}
-.fade{animation:fadeIn 1.5s}
-@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-input,textarea{width:100%;padding:12px;margin:8px 0;border-radius:8px}
-footer{background:#111;text-align:center;padding:20px}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#0d0d0d;
+color:#fff;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+}
+
+.logo{
+font-size:90px;
+color:#d4af37;
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+}
+
+h1{
+color:#d4af37;
+margin:15px 0;
+}
+
+p{
+max-width:700px;
+padding:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.title{
+text-align:center;
+color:#d4af37;
+margin-bottom:30px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:12px;
+border:1px solid #d4af37;
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.contact{
+max-width:700px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+}
+
+button{
+background:#d4af37;
+color:black;
+border:none;
+padding:15px;
+width:100%;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+}
+
+.phone{
+font-size:20px;
+color:#d4af37;
+}
 </style>
 </head>
+
 <body>
-<nav>
-<a href="#home">الرئيسية</a>
-<a href="#services">الخدمات</a>
-<a href="#booking">الحجز</a>
-<a href="#contact">التواصل</a>
-</nav>
 
-<section class="hero fade" id="home">
-<h1>المستشار / فريد حسام عبدالهادي</h1>
-<p>الوزارية الجديدة</p>
-<a class="btn" href="https://wa.me/201092790355">تواصل عبر واتساب</a>
+<header>
+
+<div class="logo">⚖</div>
+
+<h1>المستشار فريد حسام عبدالهادي</h1>
+
+<p>
+خدمات قانونية واستشارات متخصصة ومتابعة القضايا المدنية والجنائية والأحوال الشخصية.
+</p>
+
+<a href="#contact" class="btn">تقديم شكوى</a>
+
+</header>
+
+<section>
+
+<h2 class="title">خدماتنا القانونية</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>القضايا المدنية</h3>
+<p>تمثيل قانوني كامل ومتابعة كافة درجات التقاضي.</p>
+</div>
+
+<div class="card">
+<h3>القضايا الجنائية</h3>
+<p>الدفاع القانوني وحضور التحقيقات والجلسات.</p>
+</div>
+
+<div class="card">
+<h3>الأحوال الشخصية</h3>
+<p>قضايا الأسرة والطلاق والنفقات والرؤية.</p>
+</div>
+
+<div class="card">
+<h3>صياغة العقود</h3>
+<p>صياغة ومراجعة كافة العقود القانونية.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="section fade" id="services">
-<div class="card">
-<h2>الخدمات القانونية</h2>
-<ul>
-<li>القضايا الجنائية</li>
-<li>القضايا المدنية</li>
-<li>قضايا الأسرة</li>
-<li>صياغة العقود</li>
-<li>الاستشارات القانونية</li>
-</ul>
-</div>
-</section>
+<section id="contact">
 
-<section class="section fade" id="booking">
-<div class="card">
-<h2>حجز استشارة</h2>
-<input placeholder="الاسم الكامل">
-<input placeholder="رقم الهاتف">
-<textarea placeholder="اكتب تفاصيل الاستشارة"></textarea>
-<a class="btn" href="https://wa.me/201092790355">إرسال عبر واتساب</a>
-</div>
-</section>
+<h2 class="title">تقديم شكوى أو استشارة</h2>
 
-<section class="section fade" id="contact">
-<div class="card">
-<h2>التواصل</h2>
-<p>الهاتف: 01092790355</p>
-<p>البريد: Fareedhosam983@gmail.com</p>
-<p>العنوان: الوزارية الجديدة</p>
+<div class="contact">
+
+<form id="complaintForm">
+
+<input type="text" name="name" placeholder="الاسم بالكامل" required>
+
+<input type="email" name="email" placeholder="البريد الإلكتروني" required>
+
+<input type="text" name="title" placeholder="عنوان الشكوى" required>
+
+<textarea name="message" rows="6" placeholder="اكتب الشكوى أو الاستشارة هنا" required></textarea>
+
+<button type="submit">إرسال</button>
+
+</form>
+
 </div>
+
 </section>
 
 <footer>
-© مكتب المستشار فريد حسام عبدالهادي
+
+<p>الوزارية الجديدة</p>
+
+<p class="phone">01092790355</p>
+
+<p>fareedhosam983@gmail.com</p>
+
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init("KU4GVueTz0CA3SIF6");
+
+document.getElementById("complaintForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+emailjs.sendForm(
+"service_v2wehzz",
+"template_f86ls8p",
+this
+)
+
+.then(function(){
+
+alert("تم إرسال الشكوى بنجاح");
+
+})
+
+.catch(function(error){
+
+alert("حدث خطأ أثناء الإرسال");
+
+console.log(error);
+
+});
+
+});
+
+</script>
+
 </body>
 </html>
